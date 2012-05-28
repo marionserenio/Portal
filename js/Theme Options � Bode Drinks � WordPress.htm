@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html xmlns="http://www.w3.org/1999/xhtml" class="ie8"  dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if !(IE 8) ]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml"  dir="ltr" lang="en-US">
+<!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Theme Options &lsaquo; Bode Drinks &#8212; WordPress</title>
+<script type="text/javascript">
+addLoadEvent = function(func){if(typeof jQuery!="undefined")jQuery(document).ready(func);else if(typeof wpOnload!='function'){wpOnload=func;}else{var oldonload=wpOnload;wpOnload=function(){oldonload();func();}}};
+var userSettings = {
+		'url': '/',
+		'uid': '1',
+		'time':'1336518007'
+	},
+	ajaxurl = 'http://bodedrinks.com.mantra.scithosting.com/wp-admin/admin-ajax.php',
+	pagenow = 'appearance_page_options-framework',
+	typenow = '',
+	adminpage = 'appearance_page_options-framework',
+	thousandsSeparator = ',',
+	decimalPoint = '.',
+	isRtl = 0;
+</script>
+<link rel="stylesheet" href="http://bodedrinks.com.mantra.scithosting.com/wp-includes/js/thickbox/thickbox.css" type="text/css" media="screen" />
+<script type="text/javascript">
+		var tb_pathToImage = "http://bodedrinks.com.mantra.scithosting.com/wp-includes/js/thickbox/loadingAnimation.gif";
+	    var tb_closeImage = "http://bodedrinks.com.mantra.scithosting.com/wp-includes/js/thickbox/tb-close.png";
+	    </script>
+<link rel='stylesheet' href='http://bodedrinks.com.mantra.scithosting.com/wp-admin/load-styles.php?c=1&amp;dir=ltr&amp;load=admin-bar,wp-admin&amp;ver=7f0753feec257518ac1fec83d5bced6a' type='text/css' media='all' />
+<link rel='stylesheet' id='colors-css'  href='http://bodedrinks.com.mantra.scithosting.com/wp-admin/css/colors-fresh.css?ver=20111206' type='text/css' media='all' />
+<!--[if lte IE 7]>
+<link rel='stylesheet' id='ie-css'  href='http://bodedrinks.com.mantra.scithosting.com/wp-admin/css/ie.css?ver=20111130' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='admin-style-css'  href='http://bodedrinks.com.mantra.scithosting.com/wp-content/themes/elogix/admin/css/admin-style.css?ver=3.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='color-picker-css'  href='http://bodedrinks.com.mantra.scithosting.com/wp-content/themes/elogix/admin/css/colorpicker.css?ver=3.3.2' type='text/css' media='all' />
+<script type='text/javascript' src='http://bodedrinks.com.mantra.scithosting.com/wp-includes/js/tw-sack.js?ver=1.6.1'></script>
+			<script>
+				function add_sidebar( sidebar_name )
+				{
+					
+					var mysack = new sack("http://bodedrinks.com.mantra.scithosting.com/wp-admin/admin-ajax.php" );    
+				
+				  	mysack.execute = 1;
+				  	mysack.method = 'POST';
+				  	mysack.setVar( "action", "add_sidebar" );
+				  	mysack.setVar( "sidebar_name", sidebar_name );
+				  	mysack.encVar( "cookie", document.cookie, false );
+				  	mysack.onError = function() { alert('Ajax error. Cannot add sidebar' )};
+				  	mysack.runAJAX();
+					return true;
+				}
+				
+				function remove_sidebar( sidebar_name,num )
+				{
+					
+					var mysack = new sack("http://bodedrinks.com.mantra.scithosting.com/wp-admin/admin-ajax.php" );    
+				
+				  	mysack.execute = 1;
+				  	mysack.method = 'POST';
+				  	mysack.setVar( "action", "remove_sidebar" );
+				  	mysack.setVar( "sidebar_name", sidebar_name );
+				  	mysack.setVar( "row_number", num );
+				  	mysack.encVar( "cookie", document.cookie, false );
+				  	mysack.onError = function() { alert('Ajax error. Cannot add sidebar' )};
+				  	mysack.runAJAX();
+					//alert('hi!:::'+sidebar_name);
+					return true;
+				}
+			</script>
+		
+<script type='text/javascript'>
+/* <![CDATA[ */
+var thickboxL10n = {"next":"Next >","prev":"< Prev","image":"Image","of":"of","close":"Close","noiframes":"This feature requires inline frames. You have iframes disabled or your browser does not support them.","loadingAnimation":"http:\/\/bodedrinks.com.mantra.scithosting.com\/wp-includes\/js\/thickbox\/loadingAnimation.gif","closeImage":"http:\/\/bodedrinks.com.mantra.scithosting.com\/wp-includes\/js\/thickbox\/tb-close.png"};/* ]]> */
+</script>
+<script type='text/javascript' src='http://bodedrinks.com.mantra.scithosting.com/wp-admin/load-scripts.php?c=1&amp;load=jquery,utils,thickbox&amp;ver=c6fe4a435008b6dc3282640f0bc2b75c'></script>
+<script type='text/javascript' src='http://bodedrinks.com.mantra.scithosting.com/wp-content/themes/elogix/admin/js/colorpicker.js?ver=3.3.2'></script>
+<script type='text/javascript' src='http://bodedrinks.com.mantra.scithosting.com/wp-content/themes/elogix/admin/js/options-custom.js?ver=3.3.2'></script>
+<script type='text/javascript' src='http://bodedrinks.com.mantra.scithosting.com/wp-content/themes/elogix/admin/js/of-medialibrary-uploader.js?ver=3.3.2'></script>
+<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+</head>
+<body class="wp-admin no-js  appearance_page_options-framework admin-bar branch-3-3 version-3-3-2 admin-color-fresh">
+<script type="text/javascript">document.body.className = document.body.className.replace('no-js','js');</script>
+
+<div id="wpwrap">
+
+<div id="adminmenuback"></div>
+<div id="adminmenuwrap">
+<div id="adminmenushadow"></div>
+<ul id="adminmenu" role="navigation">
+
+
+	<li class="wp-first-item wp-has-submenu wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-last" id="menu-dashboard">
+	<div class='wp-menu-image'><a href='index.php'><br /></a></div><div class="wp-menu-arrow"><div></div></div><a href='index.php' class="wp-first-item wp-has-submenu wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-last" tabindex="1" aria-haspopup="true">Dashboard</a>
+	<div class='wp-submenu'><div class='wp-submenu-wrap'><div class='wp-submenu-head'>Dashboard</div><ul><li class="wp-first-item"><a href='index.php' class="wp-first-item" tabindex="1">Home</a></li><li><a href='update-core.php' tabindex="1">Updates <span class='update-plugins count-1' title='1 Plugin Update'><span class='update-count'>1</span></span></a></li></ul></div></div></li>
+	<li class="wp-not-current-submenu wp-menu-separator"><div class="separator"></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu open-if-no-js menu-top menu-icon-post menu-top-first" id="menu-posts">
+	<div class='wp-menu-image'><a href='edit.php'><br /></a></div><div class="wp-menu-arrow"><div></div></div><a href='edit.php' class="wp-has-submenu wp-not-current-submenu open-if-no-js menu-top menu-icon-post menu-top-first" tabindex="1" aria-haspopup="true">Posts</a>
+	<div class='wp-submenu'><div class='wp-submenu-wrap'><div class='wp-submenu-head'>Posts</div><ul><li class="wp-first-item"><a href='edit.php' class="wp-first-item" tabindex="1">All Posts</a></li><li><a href='post-new.php' tabindex="1">Add New</a></li><li><a href='edit-tags.php?taxonomy=category' tabindex="1">Categories</a></li><li><a href='edit-tags.php?taxonomy=post_tag' tabindex="1">Tags</a></li></ul></div></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-media" id="menu-media">
+	<div class='wp-menu-image'><a href='upload.php'><br /></a></div><div class="wp-menu-arrow"><div></div></div><a href='upload.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-media" tabindex="1" aria-haspopup="true">Media</a>
+	<div class='wp-submenu'><div class='wp-submenu-wrap'><div class='wp-submenu-head'>Media</div><ul><li class="wp-first-item"><a href='upload.php' class="wp-first-item" tabindex="1">Library</a></li><li><a href='media-new.php' tabindex="1">Add New</a></li></ul></div></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-links" id="menu-links">
+	<div class='wp-menu-image'><a href='link-manager.php'><br /></a></div><div class="wp-menu-arrow"><div></div></div><a href='link-manager.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-links" tabindex="1" aria-haspopup="true">Links</a>
+	<div class='wp-submenu'><div class='wp-submenu-wrap'><div class='wp-submenu-head'>Links</div><ul><li class="wp-first-item"><a href='link-manager.php' class="wp-first-item" tabindex="1">All Links</a></li><li><a href='link-add.php' tabindex="1">Add New</a></li><li><a href='edit-tags.php?taxonomy=link_category' tabindex="1">Link Categories</a></li></ul></div></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-page" id="menu-pages">
+	<div class='wp-menu-image'><a href='edit.php?post_type=page'><br /></a></div><div class="wp-menu-arrow"><div></div></div><a href='edit.php?post_type=page' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-page" tabindex="1" aria-haspopup="true">Pages</a>
+	<div class='wp-submenu'><div class='wp-submenu-wrap'><div class='wp-submenu-head'>Pages</div><ul><li class="wp-first-item"><a href='edit.php?post_type=page' class="wp-first-item" tabindex="1">All Pages</a></li><li><a href='post-new.php?post_type=page' tabindex="1">Add New</a></li></ul></div></div></li>
+	<li class="wp-not-current-submenu menu-top menu-icon-comments" id="menu-comments">
+	<div class='wp-menu-image'><a href='edit-comments.php'><br /></a></div><div class="wp-menu-arrow"><div></div></div><a href='edit-comments.php' class="wp-not-current-submenu menu-top menu-icon-comments" tabindex="1">Comments <span class='awaiting-mod count-0'><span class='pending-count'>0</span></span></a></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-work menu-top-last" id="menu-posts-work">
+	<div class='wp-menu-image'><a href='edit.php?post_type=work'><img src="http://bodedrinks.com.mantra.scithosting.com/wp-content/themes/elogix/framework/images/work.png" alt="" /></a></div><div class="wp-menu-arrow"><div></div></div><a href='edit.php?post_type=work' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-work menu-top-last" tabindex="1" aria-haspopup="true">Works</a>
+	<div class='wp-submenu'><div class='wp-submenu-wrap'><div class='wp-submenu-head'>Works</div><ul><li class="wp-first-item"><a href='edit.php?post_type=work' class="wp-first-item" tabindex="1">Works</a></li><li><a href='post-new.php?post_type=work' tabindex="1">Add New</a></li><li><a href='edit-tags.php?taxonomy=filters&amp;post_type=work' tabindex="1">Filters</a></li></ul></div></div></li>
+	<li class="wp-not-current-submenu wp-menu-separator"><div class="separator"></div></li>
+	<li class="wp-has-submenu wp-has-current-submenu wp-menu-open menu-top menu-icon-appearance menu-top-first" id="menu-appearance">
+	<div class='wp-menu-image'><a href='themes.php'><br /></a></div><div class="wp-menu-arrow"><div></div></div><a href='themes.php' class="wp-has-submenu wp-has-current-submenu wp-menu-open menu-top menu-icon-appearance menu-top-first" tabindex="1">Appearance</a>
+	<div class='wp-submenu'><div class='wp-submenu-wrap'><div class='wp-submenu-head'>Appearance</div><ul><li class="wp-first-item"><a href='themes.php' class="wp-first-item" tabindex="1">Themes</a></li><li><a href='widgets.php' tabindex="1">Widgets</a></li><li><a href='nav-menus.php' tabindex="1">Menus</a></li><li><a href='themes.php?page=home/bodedrinks.com/public_html/wp-content/themes/elogix/framework/functions/sidebar_generator.php' tabindex="1">Sidebars</a></li><li class="current"><a href='themes.php?page=options-framework' class="current" tabindex="1">Theme Options</a></li><li><a href='theme-editor.php' tabindex="1">Editor</a></li></ul></div></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-plugins" id="menu-plugins">
+	<div class='wp-menu-image'><a href='plugins.php'><br /></a></div><div class="wp-menu-arrow"><div></div></div><a href='plugins.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-plugins" tabindex="1" aria-haspopup="true">Plugins <span class='update-plugins count-1'><span class='plugin-count'>1</span></span></a>
+	<div class='wp-submenu'><div class='wp-submenu-wrap'><div class='wp-submenu-head'>Plugins <span class='update-plugins count-1'><span class='plugin-count'>1</span></span></div><ul><li class="wp-first-item"><a href='plugins.php' class="wp-first-item" tabindex="1">Installed Plugins</a></li><li><a href='plugin-install.php' tabindex="1">Add New</a></li><li><a href='plugin-editor.php' tabindex="1">Editor</a></li></ul></div></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-users" id="menu-users">
+	<div class='wp-menu-image'><a href='users.php'><br /></a></div><div class="wp-menu-arrow"><div></div></div><a href='users.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-users" tabindex="1" aria-haspopup="true">Users</a>
+	<div class='wp-submenu'><div class='wp-submenu-wrap'><div class='wp-submenu-head'>Users</div><ul><li class="wp-first-item"><a href='users.php' class="wp-first-item" tabindex="1">All Users</a></li><li><a href='user-new.php' tabindex="1">Add New</a></li><li><a href='profile.php' tabindex="1">Your Profile</a></li></ul></div></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools" id="menu-tools">
+	<div class='wp-menu-image'><a href='tools.php'><br /></a></div><div class="wp-menu-arrow"><div></div></div><a href='tools.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools" tabindex="1" aria-haspopup="true">Tools</a>
+	<div class='wp-submenu'><div class='wp-submenu-wrap'><div class='wp-submenu-head'>Tools</div><ul><li class="wp-first-item"><a href='tools.php' class="wp-first-item" tabindex="1">Available Tools</a></li><li><a href='import.php' tabindex="1">Import</a></li><li><a href='export.php' tabindex="1">Export</a></li></ul></div></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings menu-top-last" id="menu-settings">
+	<div class='wp-menu-image'><a href='options-general.php'><br /></a></div><div class="wp-menu-arrow"><div></div></div><a href='options-general.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings menu-top-last" tabindex="1" aria-haspopup="true">Settings</a>
+	<div class='wp-submenu'><div class='wp-submenu-wrap'><div class='wp-submenu-head'>Settings</div><ul><li class="wp-first-item"><a href='options-general.php' class="wp-first-item" tabindex="1">General</a></li><li><a href='options-writing.php' tabindex="1">Writing</a></li><li><a href='options-reading.php' tabindex="1">Reading</a></li><li><a href='options-discussion.php' tabindex="1">Discussion</a></li><li><a href='options-media.php' tabindex="1">Media</a></li><li><a href='options-privacy.php' tabindex="1">Privacy</a></li><li><a href='options-permalink.php' tabindex="1">Permalinks</a></li><li><a href='options-general.php?page=google-analytics-plugin/google-analytics-plugin.php' tabindex="1">Google Analytics</a></li></ul></div></div></li>
+	<li class="wp-not-current-submenu wp-menu-separator"><div class="separator"></div></li>
+	<li class="wp-not-current-submenu menu-top toplevel_page_wpcf7 menu-top-first menu-top-last" id="toplevel_page_wpcf7">
+	<div class='wp-menu-image'><a href='admin.php?page=wpcf7'><img src="http://bodedrinks.com.mantra.scithosting.com/wp-content/plugins/contact-form-7/admin/images/menu-icon.png" alt="" /></a></div><div class="wp-menu-arrow"><div></div></div><a href='admin.php?page=wpcf7' class="wp-not-current-submenu menu-top toplevel_page_wpcf7 menu-top-first menu-top-last" tabindex="1">Contact</a></li><li id="collapse-menu" class="hide-if-no-js"><div id="collapse-button"><div></div></div><span>Collapse menu</span></li></ul>
+</div>
+<div id="wpcontent">
+
+
+<div id="wpbody">
+
+<div id="wpbody-content">
+		<div id="screen-meta" class="metabox-prefs">
+
+			<div id="contextual-help-wrap" class="hidden no-sidebar">
+				<div id="contextual-help-back"></div>
+				<div id="contextual-help-columns">
+					<div class="contextual-help-tabs">
+						<ul>
+												</ul>
+					</div>
+
+					
+					<div class="contextual-help-tabs-wrap">
+											</div>
+				</div>
+			</div>
+				</div>
+		
+	<div class="wrap">
+    <div id="icon-themes" class="icon32"><br /></div>    <h2 class="nav-tab-wrapper">
+        <a id="of-option-generalsettings-tab" class="nav-tab" title="General Settings" href="#of-option-generalsettings">General Settings</a><a id="of-option-slider-tab" class="nav-tab" title="Slider" href="#of-option-slider">Slider</a><a id="of-option-styling-tab" class="nav-tab" title="Styling" href="#of-option-styling">Styling</a><a id="of-option-socialmedia-tab" class="nav-tab" title="Social Media" href="#of-option-socialmedia">Social Media</a>    </h2>
+
+    <div class="metabox-holder">
+    <div id="optionsframework" class="postbox">
+		<form action="options.php" method="post">
+		<input type='hidden' name='option_page' value='optionsframework' /><input type="hidden" name="action" value="update" /><input type="hidden" id="_wpnonce" name="_wpnonce" value="499b56cd0b" /><input type="hidden" name="_wp_http_referer" value="/wp-admin/themes.php?page=options-framework" />
+		<div class="group" id="of-option-generalsettings"><h3>General Settings</h3>
+<div id="section-footer_text" class="section  section-textarea">
+<h4 class="heading">Footer Text</h4>
+<div class="option">
+<div class="controls">
+<textarea id="footer_text" class="of-input" name="elogixtheme[footer_text]" rows="8">Elogix is an incredibly powerful &amp;amp; fully responsive WordPress Theme.</textarea></div><div class="explain">Descriptive Text (under Footer Logo)</div>
+</div></div>
+<div id="section-infobar_checkbox" class="section  section-checkbox">
+<h4 class="heading">Show Notification Bar</h4>
+<div class="option">
+<div class="controls">
+<input id="infobar_checkbox" class="checkbox of-input" type="checkbox" name="elogixtheme[infobar_checkbox]"  checked='checked' /><label class="explain" for="infobar_checkbox">Notification Bar (Sliding Bar above Header)</label></div></div></div>
+<div id="section-infobar_visible" class="section  section-checkbox">
+<h4 class="heading">Notification Bar visible on Pageload?</h4>
+<div class="option">
+<div class="controls">
+<input id="infobar_visible" class="checkbox of-input" type="checkbox" name="elogixtheme[infobar_visible]"  checked='checked' /><label class="explain" for="infobar_visible">Check if Notification Bar should be visible on Pageload. Make sure to delete Cookies before testing, because the Notification Bar uses cookies - so if you see it closed even though you checked the box just delete cookies and reload the Page - also the other way round.</label></div></div></div>
+<div id="section-infobar_text" class="section  section-textarea">
+<h4 class="heading">Notification Bar Text (above Header)</h4>
+<div class="option">
+<div class="controls">
+<textarea id="infobar_text" class="of-input" name="elogixtheme[infobar_text]" rows="8"></textarea></div><div class="explain">Notification Bar descriptive Text</div>
+</div></div>
+<div id="section-latestwork_checkbox" class="section  section-checkbox">
+<h4 class="heading">Show Latestwork on Home Page</h4>
+<div class="option">
+<div class="controls">
+<input id="latestwork_checkbox" class="checkbox of-input" type="checkbox" name="elogixtheme[latestwork_checkbox]"  checked='checked' /><label class="explain" for="latestwork_checkbox">Show Latest Work on Home Page</label></div></div></div>
+<div id="section-latestwork_text" class="section  section-textarea">
+<h4 class="heading">Latest Work Text</h4>
+<div class="option">
+<div class="controls">
+<textarea id="latestwork_text" class="of-input" name="elogixtheme[latestwork_text]" rows="8">Maecenas a mi nibh, eu euismod orci. Vivamus viverra lacus vitae tortor molestie malesuada.&lt;br /&gt;&lt;br /&gt;&lt;a href=&#039;#&#039;&gt;Show all Works&lt;/a&gt;</textarea></div><div class="explain">Descriptive Text of Latest Work on Home Page</div>
+</div></div>
+<div id="section-latestposts_checkbox" class="section  section-checkbox">
+<h4 class="heading">Show Latest Posts from Blog on Home Page</h4>
+<div class="option">
+<div class="controls">
+<input id="latestposts_checkbox" class="checkbox of-input" type="checkbox" name="elogixtheme[latestposts_checkbox]"  checked='checked' /><label class="explain" for="latestposts_checkbox">Show Latest Posts from Blog on Home Page</label></div></div></div>
+<div id="section-latestposts_text" class="section  section-textarea">
+<h4 class="heading">Latest Posts Text</h4>
+<div class="option">
+<div class="controls">
+<textarea id="latestposts_text" class="of-input" name="elogixtheme[latestposts_text]" rows="8">Maecenas a mi nibh, eu euismod orci. Vivamus viverra lacus vitae tortor molestie malesuada.&lt;br /&gt;&lt;br /&gt;&lt;a href=&#039;#&#039;&gt;Show all Posts&lt;/a&gt;</textarea></div><div class="explain">Descriptive Text of Latest Posts on Home Page</div>
+</div></div>
+<div id="section-twitterfooter_checkbox" class="section  section-checkbox">
+<h4 class="heading">Show Twitter-Feed above Footer</h4>
+<div class="option">
+<div class="controls">
+<input id="twitterfooter_checkbox" class="checkbox of-input" type="checkbox" name="elogixtheme[twitterfooter_checkbox]"  checked='checked' /><label class="explain" for="twitterfooter_checkbox">Show Twitter-Feed above Footer (configure your Twitter Name in Social Media)</label></div></div></div>
+<div id="section-contact_email" class="section  section-text">
+<h4 class="heading">Contact E-Mail</h4>
+<div class="option">
+<div class="controls">
+<input id="contact_email" class="of-input" name="elogixtheme[contact_email]" type="text" value="" /></div><div class="explain">Contact Form E-Mail Address</div>
+</div></div>
+<div id="section-contact_information" class="section  section-textarea">
+<h4 class="heading">Contact Information</h4>
+<div class="option">
+<div class="controls">
+<textarea id="contact_information" class="of-input" name="elogixtheme[contact_information]" rows="8">&lt;h3&gt;Contact Information&lt;/h3&gt;
+John Doe, Inc. &lt;br /&gt;
+1234 Main Street Anywhere, &lt;br /&gt;
+USA&lt;br /&gt;&lt;br /&gt;
+
+Phone: 123 456 7890&lt;br /&gt;
+Fax: +49 123 456 7891&lt;br /&gt;
+Email: hello@example.com&lt;br /&gt;
+Web: example.com&lt;br /&gt;</textarea></div><div class="explain">Insert your Contact Information here. This will be display beside the contact form.</div>
+</div></div>
+<div id="section-analytics_code" class="section  section-textarea">
+<h4 class="heading">Google Analytics Code</h4>
+<div class="option">
+<div class="controls">
+<textarea id="analytics_code" class="of-input" name="elogixtheme[analytics_code]" rows="8"></textarea></div><div class="explain">Insert your Google Analytics Code</div>
+</div></div>
+</div>
+<div class="group" id="of-option-slider"><h3>Slider</h3>
+<div id="section-slide1_upload" class="section  section-upload">
+<h4 class="heading">Slide 1</h4>
+<div class="option">
+<div class="controls">
+<input id="slide1_upload" class="upload has-file" type="text" name="elogixtheme[slide1_upload]" value="http://bodedrinks.com.mantra.scithosting.com/wp-content/uploads/2012/05/slider1-300x97.jpg" />
+<input id="upload_slide1_upload" class="upload_button button" type="button" value="Upload" rel="51" />
+<div class="screenshot" id="slide1_upload_image">
+<img src="http://bodedrinks.com.mantra.scithosting.com/wp-content/uploads/2012/05/slider1-300x97.jpg" alt="" /><a href="javascript:(void);" class="mlu_remove button">Remove</a></div>
+</div><div class="explain">Image for the first slide (Width should be 980px, Height of all Slides should be the same.)</div>
+</div></div>
+<div id="section-slide1_caption" class="section  section-text">
+<h4 class="heading">Slide 1 Caption</h4>
+<div class="option">
+<div class="controls">
+<input id="slide1_caption" class="of-input" name="elogixtheme[slide1_caption]" type="text" value="Slider 1" /></div><div class="explain">Caption for Slide 1</div>
+</div></div>
+<div id="section-slide1_url" class="section  section-text">
+<h4 class="heading">Slide 1 URL</h4>
+<div class="option">
+<div class="controls">
+<input id="slide1_url" class="of-input" name="elogixtheme[slide1_url]" type="text" value="" /></div><div class="explain">URL for Slide 1</div>
+</div></div>
+<div id="section-slide2_upload" class="section  section-upload">
+<h4 class="heading">Slide 2</h4>
+<div class="option">
+<div class="controls">
+<input id="slide2_upload" class="upload has-file" type="text" name="elogixtheme[slide2_upload]" value="http://bodedrinks.com.mantra.scithosting.com/wp-content/uploads/2012/05/slider2-300x97.jpg" />
+<input id="upload_slide2_upload" class="upload_button button" type="button" value="Upload" rel="52" />
+<div class="screenshot" id="slide2_upload_image">
+<img src="http://bodedrinks.com.mantra.scithosting.com/wp-content/uploads/2012/05/slider2-300x97.jpg" alt="" /><a href="javascript:(void);" class="mlu_remove button">Remove</a></div>
+</div><div class="explain">Image for the first slide (Width should be 980px, Height of all Slides should be the same.)</div>
+</div></div>
+<div id="section-slide2_caption" class="section  section-text">
+<h4 class="heading">Slide 2 Caption</h4>
+<div class="option">
+<div class="controls">
+<input id="slide2_caption" class="of-input" name="elogixtheme[slide2_caption]" type="text" value="" /></div><div class="explain">Caption for Slide 2</div>
+</div></div>
+<div id="section-slide2_url" class="section  section-text">
+<h4 class="heading">Slide 2 URL</h4>
+<div class="option">
+<div class="controls">
+<input id="slide2_url" class="of-input" name="elogixtheme[slide2_url]" type="text" value="" /></div><div class="explain">URL for Slide 2</div>
+</div></div>
+<div id="section-slide3_upload" class="section  section-upload">
+<h4 class="heading">Slide 3</h4>
+<div class="option">
+<div class="controls">
+<input id="slide3_upload" class="upload has-file" type="text" name="elogixtheme[slide3_upload]" value="http://bodedrinks.com.mantra.scithosting.com/wp-content/uploads/2012/05/slider3.jpg" />
+<input id="upload_slide3_upload" class="upload_button button" type="button" value="Upload" rel="53" />
+<div class="screenshot" id="slide3_upload_image">
+<img src="http://bodedrinks.com.mantra.scithosting.com/wp-content/uploads/2012/05/slider3.jpg" alt="" /><a href="javascript:(void);" class="mlu_remove button">Remove</a></div>
+</div><div class="explain">Image for the first slide (Width should be 980px, Height of all Slides should be the same.)</div>
+</div></div>
+<div id="section-slide3_caption" class="section  section-text">
+<h4 class="heading">Slide 3 Caption</h4>
+<div class="option">
+<div class="controls">
+<input id="slide3_caption" class="of-input" name="elogixtheme[slide3_caption]" type="text" value="" /></div><div class="explain">Caption for Slide 3</div>
+</div></div>
+<div id="section-slide3_url" class="section  section-text">
+<h4 class="heading">Slide 3 URL</h4>
+<div class="option">
+<div class="controls">
+<input id="slide3_url" class="of-input" name="elogixtheme[slide3_url]" type="text" value="" /></div><div class="explain">URL for Slide 3</div>
+</div></div>
+<div id="section-slide4_upload" class="section  section-upload">
+<h4 class="heading">Slide 4</h4>
+<div class="option">
+<div class="controls">
+<input id="slide4_upload" class="upload" type="text" name="elogixtheme[slide4_upload]" value="" />
+<input id="upload_slide4_upload" class="upload_button button" type="button" value="Upload" rel="54" />
+<div class="screenshot" id="slide4_upload_image">
+</div>
+</div><div class="explain">Image for the first slide (Width should be 980px, Height of all Slides should be the same.)</div>
+</div></div>
+<div id="section-slide4_caption" class="section  section-text">
+<h4 class="heading">Slide 4 Caption</h4>
+<div class="option">
+<div class="controls">
+<input id="slide4_caption" class="of-input" name="elogixtheme[slide4_caption]" type="text" value="" /></div><div class="explain">Caption for Slide 4</div>
+</div></div>
+<div id="section-slide4_url" class="section  section-text">
+<h4 class="heading">Slide 4 URL</h4>
+<div class="option">
+<div class="controls">
+<input id="slide4_url" class="of-input" name="elogixtheme[slide4_url]" type="text" value="" /></div><div class="explain">URL for Slide 4</div>
+</div></div>
+<div id="section-slide5_upload" class="section  section-upload">
+<h4 class="heading">Slide 5</h4>
+<div class="option">
+<div class="controls">
+<input id="slide5_upload" class="upload" type="text" name="elogixtheme[slide5_upload]" value="" />
+<input id="upload_slide5_upload" class="upload_button button" type="button" value="Upload" rel="55" />
+<div class="screenshot" id="slide5_upload_image">
+</div>
+</div><div class="explain">Image for the first slide (Width should be 980px, Height of all Slides should be the same.)</div>
+</div></div>
+<div id="section-slide5_caption" class="section  section-text">
+<h4 class="heading">Slide 5 Caption</h4>
+<div class="option">
+<div class="controls">
+<input id="slide5_caption" class="of-input" name="elogixtheme[slide5_caption]" type="text" value="" /></div><div class="explain">Caption for Slide 5</div>
+</div></div>
+<div id="section-slide5_url" class="section  section-text">
+<h4 class="heading">Slide 5 URL</h4>
+<div class="option">
+<div class="controls">
+<input id="slide5_url" class="of-input" name="elogixtheme[slide5_url]" type="text" value="" /></div><div class="explain">URL for Slide 5</div>
+</div></div>
+<div id="section-slide6_upload" class="section  section-upload">
+<h4 class="heading">Slide 6</h4>
+<div class="option">
+<div class="controls">
+<input id="slide6_upload" class="upload" type="text" name="elogixtheme[slide6_upload]" value="" />
+<input id="upload_slide6_upload" class="upload_button button" type="button" value="Upload" rel="56" />
+<div class="screenshot" id="slide6_upload_image">
+</div>
+</div><div class="explain">Image for the first slide (Width should be 980px, Height of all Slides should be the same.)</div>
+</div></div>
+<div id="section-slide6_caption" class="section  section-text">
+<h4 class="heading">Slide 6 Caption</h4>
+<div class="option">
+<div class="controls">
+<input id="slide6_caption" class="of-input" name="elogixtheme[slide6_caption]" type="text" value="" /></div><div class="explain">Caption for Slide 6</div>
+</div></div>
+<div id="section-slide6_url" class="section  section-text">
+<h4 class="heading">Slide 6 URL</h4>
+<div class="option">
+<div class="controls">
+<input id="slide6_url" class="of-input" name="elogixtheme[slide6_url]" type="text" value="" /></div><div class="explain">URL for Slide 6</div>
+</div></div>
+</div>
+<div class="group" id="of-option-styling"><h3>Styling</h3>
+<div id="section-logo_upload" class="section  section-upload">
+<h4 class="heading">Header Logo</h4>
+<div class="option">
+<div class="controls">
+<input id="logo_upload" class="upload" type="text" name="elogixtheme[logo_upload]" value="" />
+<input id="upload_logo_upload" class="upload_button button" type="button" value="Upload" rel="57" />
+<div class="screenshot" id="logo_upload_image">
+</div>
+</div><div class="explain">Header Logo</div>
+</div></div>
+<div id="section-logo_margin" class="section  section-text">
+<h4 class="heading">Header Logo Margin-Top</h4>
+<div class="option">
+<div class="controls">
+<input id="logo_margin" class="of-input" name="elogixtheme[logo_margin]" type="text" value="45px" /></div><div class="explain">Margin-Top of Header Logo (Default: 45px)</div>
+</div></div>
+<div id="section-favicon_upload" class="section  section-upload">
+<h4 class="heading">Favicon</h4>
+<div class="option">
+<div class="controls">
+<input id="favicon_upload" class="upload" type="text" name="elogixtheme[favicon_upload]" value="" />
+<input id="upload_favicon_upload" class="upload_button button" type="button" value="Upload" rel="58" />
+<div class="screenshot" id="favicon_upload_image">
+</div>
+</div><div class="explain">Upload a 16x16px Favicon (ico/png/gif)</div>
+</div></div>
+<div id="section-footerlogo_upload" class="section  section-upload">
+<h4 class="heading">Footer Logo</h4>
+<div class="option">
+<div class="controls">
+<input id="footerlogo_upload" class="upload" type="text" name="elogixtheme[footerlogo_upload]" value="" />
+<input id="upload_footerlogo_upload" class="upload_button button" type="button" value="Upload" rel="59" />
+<div class="screenshot" id="footerlogo_upload_image">
+</div>
+</div><div class="explain">Footer Logo</div>
+</div></div>
+<div id="section-primary_colorpicker" class="section  section-color">
+<h4 class="heading">Primary Color</h4>
+<div class="option">
+<div class="controls">
+<div id="primary_colorpicker_picker" class="colorSelector"><div style="background-color:#ec7100"></div></div><input class="of-color" name="elogixtheme[primary_colorpicker]" id="primary_colorpicker" type="text" value="#ec7100" /></div><div class="explain">Selected your Color.</div>
+</div></div>
+<div id="section-default_background" class="section  section-background">
+<h4 class="heading">Default Background</h4>
+<div class="option">
+<div class="controls">
+<div id="default_background_color_picker" class="colorSelector"><div style="background-color:"></div></div><input class="of-color of-background of-background-color" name="elogixtheme[default_background][color]" id="default_background_color" type="text" value="" /><input id="default_background" class="upload" type="text" name="elogixtheme[default_background][image]" value="" />
+<input id="upload_default_background" class="upload_button button" type="button" value="Upload" rel="60" />
+<div class="screenshot" id="default_background_image">
+</div>
+<div class="of-background-properties hide"><select class="of-background of-background-repeat" name="elogixtheme[default_background][repeat]" id="default_background_repeat"><option value="no-repeat" >No Repeat</option><option value="repeat-x" >Repeat Horizontally</option><option value="repeat-y" >Repeat Vertically</option><option value="repeat"  selected='selected'>Repeat All</option></select><select class="of-background of-background-position" name="elogixtheme[default_background][position]" id="default_background_position"><option value="top left" >Top Left</option><option value="top center"  selected='selected'>Top Center</option><option value="top right" >Top Right</option><option value="center left" >Middle Left</option><option value="center center" >Middle Center</option><option value="center right" >Middle Right</option><option value="bottom left" >Bottom Left</option><option value="bottom center" >Bottom Center</option><option value="bottom right" >Bottom Right</option></select><select class="of-background of-background-attachment" name="elogixtheme[default_background][attachment]" id="default_background_attachment"><option value="scroll"  selected='selected'>Scroll Normally</option><option value="fixed" >Fixed in Place</option></select></div></div><div class="explain">Change the Default Background CSS. Remember: The Background Settings of each Page override this Setting.</div>
+</div></div>
+<div id="section-css_code" class="section  section-textarea">
+<h4 class="heading">Custom CSS Code</h4>
+<div class="option">
+<div class="controls">
+<textarea id="css_code" class="of-input" name="elogixtheme[css_code]" rows="8"></textarea></div><div class="explain">Insert your Custom CSS</div>
+</div></div>
+</div>
+<div class="group" id="of-option-socialmedia"><h3>Social Media</h3>
+<div id="section-twitter_url" class="section  section-text">
+<h4 class="heading">Twitter</h4>
+<div class="option">
+<div class="controls">
+<input id="twitter_url" class="of-input" name="elogixtheme[twitter_url]" type="text" value="" /></div><div class="explain">Twitter Username</div>
+</div></div>
+<div id="section-facebook_url" class="section  section-text">
+<h4 class="heading">Facebook</h4>
+<div class="option">
+<div class="controls">
+<input id="facebook_url" class="of-input" name="elogixtheme[facebook_url]" type="text" value="" /></div><div class="explain">Facebook Url</div>
+</div></div>
+<div id="section-dribbble_url" class="section  section-text">
+<h4 class="heading">Dribbble</h4>
+<div class="option">
+<div class="controls">
+<input id="dribbble_url" class="of-input" name="elogixtheme[dribbble_url]" type="text" value="" /></div><div class="explain">Dribbble Url</div>
+</div></div>
+<div id="section-flickr_url" class="section  section-text">
+<h4 class="heading">Flickr</h4>
+<div class="option">
+<div class="controls">
+<input id="flickr_url" class="of-input" name="elogixtheme[flickr_url]" type="text" value="" /></div><div class="explain">Flickr Url</div>
+</div></div>
+<div id="section-google_url" class="section  section-text">
+<h4 class="heading">Google</h4>
+<div class="option">
+<div class="controls">
+<input id="google_url" class="of-input" name="elogixtheme[google_url]" type="text" value="" /></div><div class="explain">Google Url</div>
+</div></div>
+<div id="section-vimeo_url" class="section  section-text">
+<h4 class="heading">Vimeo</h4>
+<div class="option">
+<div class="controls">
+<input id="vimeo_url" class="of-input" name="elogixtheme[vimeo_url]" type="text" value="" /></div><div class="explain">Vimeo Url</div>
+</div></div>
+<div id="section-youtube_url" class="section  section-text">
+<h4 class="heading">Youtube</h4>
+<div class="option">
+<div class="controls">
+<input id="youtube_url" class="of-input" name="elogixtheme[youtube_url]" type="text" value="" /></div><div class="explain">Youtube Url</div>
+</div></div>
+<div id="section-linkedin_url" class="section  section-text">
+<h4 class="heading">LinkedIn</h4>
+<div class="option">
+<div class="controls">
+<input id="linkedin_url" class="of-input" name="elogixtheme[linkedin_url]" type="text" value="" /></div><div class="explain">LinkedIn Url</div>
+</div></div>
+<div id="section-pinterest_url" class="section  section-text">
+<h4 class="heading">Pinterest</h4>
+<div class="option">
+<div class="controls">
+<input id="pinterest_url" class="of-input" name="elogixtheme[pinterest_url]" type="text" value="" /></div><div class="explain">Pinterest Url</div>
+</div></div>
+</div>
+        <div id="optionsframework-submit">
+			<input type="submit" class="button-primary" name="update" value="Save Options" />
+            <input type="submit" class="reset-button button-secondary" name="reset" value="Restore Defaults" onclick="return confirm( 'Click OK to reset. Any theme settings will be lost!' );" />
+            <div class="clear"></div>
+		</div>
+	</form>
+</div> <!-- / #container -->
+</div>
+</div> <!-- / .wrap -->
+
+
+<div class="clear"></div></div><!-- wpbody-content -->
+<div class="clear"></div></div><!-- wpbody -->
+<div class="clear"></div></div><!-- wpcontent -->
+
+<div id="footer">
+<p id="footer-left" class="alignleft"><span id="footer-thankyou">Thank you for creating with <a href="http://wordpress.org/">WordPress</a>.</span></p>
+<p id="footer-upgrade" class="alignright">Version 3.3.2</p>
+<div class="clear"></div>
+</div>
+		<div id="wpadminbar" class="nojq nojs" role="navigation">
+			<div class="quicklinks">
+				<ul id="wp-admin-bar-root-default" class="ab-top-menu">
+		<li id="wp-admin-bar-wp-logo" class="menupop"><a class="ab-item" tabindex="10" aria-haspopup="true" href="http://bodedrinks.com.mantra.scithosting.com/wp-admin/about.php" title="About WordPress"><span class="ab-icon"></span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wp-logo-default" class="ab-submenu">
+		<li id="wp-admin-bar-about" class=""><a class="ab-item" tabindex="10" href="http://bodedrinks.com.mantra.scithosting.com/wp-admin/about.php">About WordPress</a>		</li></ul><ul id="wp-admin-bar-wp-logo-external" class="ab-sub-secondary ab-submenu">
+		<li id="wp-admin-bar-wporg" class=""><a class="ab-item" tabindex="10" href="http://wordpress.org">WordPress.org</a>		</li>
+		<li id="wp-admin-bar-documentation" class=""><a class="ab-item" tabindex="10" href="http://codex.wordpress.org">Documentation</a>		</li>
+		<li id="wp-admin-bar-support-forums" class=""><a class="ab-item" tabindex="10" href="http://wordpress.org/support/">Support Forums</a>		</li>
+		<li id="wp-admin-bar-feedback" class=""><a class="ab-item" tabindex="10" href="http://wordpress.org/support/forum/requests-and-feedback">Feedback</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item" tabindex="10" aria-haspopup="true" href="http://bodedrinks.com.mantra.scithosting.com/">Bode Drinks</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-site-name-default" class="ab-submenu">
+		<li id="wp-admin-bar-view-site" class=""><a class="ab-item" tabindex="10" href="http://bodedrinks.com.mantra.scithosting.com/">Visit Site</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-updates" class=""><a class="ab-item" tabindex="10" href="http://bodedrinks.com.mantra.scithosting.com/wp-admin/update-core.php" title="1 Plugin Update"><span class="ab-icon"></span><span class="ab-label">1</span></a>		</li>
+		<li id="wp-admin-bar-comments" class=""><a class="ab-item" tabindex="10" href="http://bodedrinks.com.mantra.scithosting.com/wp-admin/edit-comments.php" title="0 comments awaiting moderation"><span class="ab-icon"></span><span id="ab-awaiting-mod" class="ab-label awaiting-mod pending-count count-0">0</span></a>		</li>
+		<li id="wp-admin-bar-new-content" class="menupop"><a class="ab-item" tabindex="10" aria-haspopup="true" href="http://bodedrinks.com.mantra.scithosting.com/wp-admin/post-new.php" title="Add New"><span class="ab-icon"></span><span class="ab-label">New</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-new-content-default" class="ab-submenu">
+		<li id="wp-admin-bar-new-post" class=""><a class="ab-item" tabindex="10" href="http://bodedrinks.com.mantra.scithosting.com/wp-admin/post-new.php">Post</a>		</li>
+		<li id="wp-admin-bar-new-media" class=""><a class="ab-item" tabindex="10" href="http://bodedrinks.com.mantra.scithosting.com/wp-admin/media-new.php">Media</a>		</li>
+		<li id="wp-admin-bar-new-link" class=""><a class="ab-item" tabindex="10" href="http://bodedrinks.com.mantra.scithosting.com/wp-admin/link-add.php">Link</a>		</li>
+		<li id="wp-admin-bar-new-page" class=""><a class="ab-item" tabindex="10" href="http://bodedrinks.com.mantra.scithosting.com/wp-admin/post-new.php?post_type=page">Page</a>		</li>
+		<li id="wp-admin-bar-new-work" class=""><a class="ab-item" tabindex="10" href="http://bodedrinks.com.mantra.scithosting.com/wp-admin/post-new.php?post_type=work">Work</a>		</li>
+		<li id="wp-admin-bar-new-user" class=""><a class="ab-item" tabindex="10" href="http://bodedrinks.com.mantra.scithosting.com/wp-admin/user-new.php">User</a>		</li></ul></div>		</li></ul><ul id="wp-admin-bar-top-secondary" class="ab-top-secondary ab-top-menu">
+		<li id="wp-admin-bar-my-account" class="menupop with-avatar"><a class="ab-item" tabindex="10" aria-haspopup="true" href="http://bodedrinks.com.mantra.scithosting.com/wp-admin/profile.php" title="My Account">Howdy, admin<img alt='' src='http://0.gravatar.com/avatar/4b232e67ee9b88dc4c545c5b10015d99?s=16&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D16&amp;r=G' class='avatar avatar-16 photo' height='16' width='16' /></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-user-actions" class=" ab-submenu">
+		<li id="wp-admin-bar-user-info" class=""><a class="ab-item" tabindex="-1" href="http://bodedrinks.com.mantra.scithosting.com/wp-admin/profile.php"><img alt='' src='http://0.gravatar.com/avatar/4b232e67ee9b88dc4c545c5b10015d99?s=64&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D64&amp;r=G' class='avatar avatar-64 photo' height='64' width='64' /><span class='display-name'>admin</span></a>		</li>
+		<li id="wp-admin-bar-edit-profile" class=""><a class="ab-item" tabindex="10" href="http://bodedrinks.com.mantra.scithosting.com/wp-admin/profile.php">Edit My Profile</a>		</li>
+		<li id="wp-admin-bar-logout" class=""><a class="ab-item" tabindex="10" href="http://bodedrinks.com.mantra.scithosting.com/wp-login.php?action=logout&#038;_wpnonce=34efc2f3df">Log Out</a>		</li></ul></div>		</li></ul>			</div>
+		</div>
+
+		
+<script type='text/javascript'>
+/* <![CDATA[ */
+var commonL10n = {"warnDelete":"You are about to permanently delete the selected items.\n  'Cancel' to stop, 'OK' to delete."};/* ]]> */
+</script>
+<script type='text/javascript' src='http://bodedrinks.com.mantra.scithosting.com/wp-admin/load-scripts.php?c=1&amp;load=admin-bar,hoverIntent,common,jquery-color,jquery-ui-core,media-upload&amp;ver=b67e941fd68b3d1db900a94225cc27c4'></script>
+
+<div class="clear"></div></div><!-- wpwrap -->
+<script type="text/javascript">if(typeof wpOnload=='function')wpOnload();</script>
+</body>
+</html>

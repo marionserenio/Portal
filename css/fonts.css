@@ -1,0 +1,6 @@
+@font-face { font-family: Androgyne; src: url('Androgyne.otf'); }
+@font-face {
+  font-family:"Androgyne"; 
+  src: url("css/Androgyne.otf");
+  src:url("../css/Androgyne.otf") format("opentype"); 
+}

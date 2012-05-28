@@ -1,0 +1,317 @@
+//4:24 AM 4/20/2012
+//Marion Serenio
+//www.marionserenio.com
+
+@import url(less/bootstrap.less);
+
+
+@light_brown : #e3cbac;
+@light_grey : #e0e0e0;
+@orange : #c46d3b;
+@blue : #324654;
+@dark_blue : #324654;
+@darker_blue :#01182f;
+@light_orange : #e55a3b;
+@dark_orange: #df4329;
+
+.r(){
+	background-color:red;
+}
+
+html, body{
+	background: url(../images/gradient.png), url(../images/hard_stripe.jpg);
+	background-position:center center, top left;
+	background-repeat:no-repeat, repeat;
+}
+
+.button{
+	#gradient.vertical(@light_orange, @dark_orange);
+	border:1px solid #d02c11;
+	color:#ffc7bb;
+	background-color:@light_orange;
+	text-shadow:1px 1px 1px #222;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:bold;
+		&:hover{
+			color:#ffac9a;
+			background-color:@light_orange;
+			#gradient.vertical(@light_orange, @dark_orange);
+		}
+		&:disabled{
+			.r();
+			#gradient.vertical(@dark_orange, @dark_orange);
+		}
+}
+
+
+.formContainer(){
+	padding:2px;
+	#gradient.vertical(@light_orange, @dark_orange);
+	border:1px solid @light_orange - 20%;
+	height:28px;
+	.border-radius(5px);
+}
+
+#MainContainer{
+	width:360px;
+	margin:220px auto;
+	height:auto;
+	.version{
+		font-size:16px;
+		margin-left:-10px;
+	}
+		h1{
+			margin-left:-130px;
+			font-family:"Androgyne";
+			font-weight:normal;
+			text-align:center;
+			font-size:75px;
+			color:@orange;
+			width:600px;
+			text-shadow:0px 0px 10px #0f2331;
+		}
+		#LoginForm{
+			margin-top:50px;
+			padding:15px 15px 15px 15px;
+			#gradient.vertical(@light_brown, @light_grey);
+			.border-radius(2px);
+			border-bottom:1px solid @darker_blue + 50%;
+			select:focus{
+				outline:none;
+			}
+
+			input[type="text"], input[type="password"]{
+				.box-shadow(0px 0px 0px @dark_orange);
+				width:290px;
+					&:focus{
+						.box-shadow(0px 0px 10px @dark_orange);
+						border:1px solid #efefef;
+					}
+			}
+			.LoginInputContainer{
+				.formContainer();
+				width:327px;
+			}
+
+
+		}
+		#loginbutton{
+			float:right;
+			margin-top:20px;
+			margin-right:105px;
+			#gradient.vertical(@light_orange, @dark_orange);
+			border:1px solid #d02c11;
+			color:#ffc7bb;
+			background-color:@light_orange;
+			text-shadow:1px 1px 1px #222;
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-weight:bold;
+				&:hover{
+					color:#ffac9a;
+					background-color:@light_orange;
+					#gradient.vertical(@light_orange, @dark_orange);
+				}
+		}
+}
+//AdminUI variables
+@light : #efefef;
+
+#AdminUI{
+	width:920px;
+	height:500px;
+	margin:220px auto;
+	#gradient.vertical(@light, @light - 30%);
+	.border-radius(2px);
+	border-bottom:1px solid #999;
+	position:relative;
+		#AdminOptions{
+			width:120px;
+			height:100%;
+			border-right:1px solid @light - 80%;
+			float:left;
+				ul{
+					list-style:none;
+					li{
+						height:50px;
+						border-bottom:1px solid @dark_orange - 50%;
+						border-top:1px solid @dark_orange + 50%;
+						margin-left:-25px;
+						.transition(0.5s);
+						#gradient.vertical(@light_orange, @dark_orange);
+
+						a{
+							display:block;
+							height:52px;
+						}
+
+						img{
+							width:28px;
+							height:22px;
+							margin:13px 0px 0px 47px;
+						}
+						&:hover{
+							#gradient.vertical(@light_orange - 20%, @dark_orange - 20%);
+							.transition(0.5s);
+						}
+						.InUse{
+							#gradient.vertical(@light_orange - 30%, @dark_orange - 30%);
+							.transition(0.5s);
+						}
+					}
+				}
+		}
+	#AdminFormContainer{
+		padding:5px 5px 5px 5px;
+		height:470px;
+		width:770px;
+		border:1px solid #9b9b9b;
+		position:absolute;
+		top:10px;
+		left:130px;
+		.border-radius(4px);
+		.box-shadow(0px 0px 10px #a5a5a5 inset);
+		background-color:#f7f7f7;
+
+			h3{
+				font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+				margin-bottom:10px;
+			}
+			input[type="text"], input[type="password"]{
+				.box-shadow(0px 0px 0px @dark_orange);
+				width:220px;
+					&:focus{
+						.box-shadow(0px 0px 10px @dark_orange);
+						border:1px solid #efefef;
+					}
+			}
+			select#AdminAddAgentSelect, select#AdminAddAgentLevel{
+				width:230px;
+				outline:none;
+			}
+			.AddAgentInputContainer{
+				.formContainer();
+				width:257px;
+			}
+			.AddCampaignInputContainer{
+				.formContainer();
+				width:257px;
+			}
+			.AddAgentSelectContainer{
+				.formContainer();
+				width:257px;
+			}
+			.adminbutton{
+				margin-top:-40px;
+			}
+		}
+		#Append{
+			display:none;
+			font-weight:bold;
+			white-space:pre;
+			font-size:11px;
+			top:60px;
+			left:290px;
+			position:absolute;
+		}
+	
+}
+#CampaignContainer{
+	background-color:#f7f7f7;
+	width:90%;
+	height:720px;
+	margin:0 auto;
+	margin-top:80px;
+	padding:10px;
+	.border-radius(4px);
+	.box-shadow(0px 0px 10px #a5a5a5 inset);
+	position:relative;
+
+		#QueryPhoneNumber{
+
+		}
+		#FFG-CampaignContainer{
+			display:hidden;
+			width:550px;
+			height:460px;
+			position:absolute;
+
+		}
+		#FFG-Campaign-Questions{
+			float:left;
+			position:absolute;
+			top:-100px;
+			left:600px;
+			width:400px;
+
+
+				textarea{
+					width:350px;
+					height:120px;
+					max-height:120px;
+					max-width:500px;
+					.transition(0.2s);
+					&:focus{
+						width:500px;
+					}
+				}
+		}
+		label{
+			font-weight:bold;
+		}
+		.city{
+			float:left;
+			margin-right:125px;
+		}
+		.State{
+			float:left;
+			margin-right:110px;
+		}
+		.ListName{
+			float:left;
+
+		}
+		.LeadType{
+			margin-left:150px;
+		}
+		.addressList{
+			margin-left:1px;
+		}
+		.LeadMeta{
+			margin-left:1px;
+		}
+
+}
+#LoginErrorContainer{
+	margin-top:70px;
+	text-align:center;
+}
+#AgentMeta{
+	margin-top:-45px;
+	float:right;
+	p{
+		margin-top:5px;
+		float:left;
+		margin-right:20px;
+		color:#efefef;
+	}
+	i{
+		margin-top:2px;
+	}
+	span.user{
+		text-decoration:underline;
+	}
+}
+footer{
+	height:100%;
+	text-align:center;
+	p{
+		font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+		color:#efefef;
+		font-size:10px;
+	}
+}
+#GetFFGRecording{
+	i{
+		margin-top:2px;
+	}
+}
